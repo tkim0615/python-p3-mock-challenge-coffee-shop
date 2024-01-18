@@ -25,7 +25,9 @@ if __name__ == '__main__':
     order4= Order(c1, cf2, 5.29)
     order5= Order(c2, cf1, 1.95)
 
-    order6= Order(c2, cf2, 1.59)
+    order6= Order(c2, cf2, 9.00)
+    order7= Order(c3, cf1, 9.8)
+
 
 
 

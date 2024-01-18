@@ -50,6 +50,12 @@ class Customer:
     
     def create_order(self, coffee, price):
         return Order(self, coffee, price)
+    
+    def most_aficionado(cls, coffee):
+        all_coffee_orders = [order for order in Order.all if order.coffee is coffee]
+        print(all_coffee_orders)
+        if all_coffee_orders:
+            return max(cls.all, key= lambda customer: sum([order.price for order in all_coffee_orders if order.customer is customer]))
 
     
 class Order:
